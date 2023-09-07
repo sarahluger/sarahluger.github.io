@@ -1,0 +1,5 @@
+@import 'bootstrap.css';
+
+html, body {
+	font-size: calc(16px + 0.5vw);
+}
