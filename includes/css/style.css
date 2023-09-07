@@ -3,3 +3,7 @@
 html, body {
 	font-size: calc(16px + 0.5vw);
 }
+
+#profile-pic {
+	border-radius: 15px;
+}
