@@ -1,0 +1,33 @@
+@import 'bootstrap';
+
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+.viz {
+	border: 2px solid pink;
+}
+
+html, body {
+	font-size: calc(16px + 0.5vw);
+}
+
+h1, h2 ,h3,h4,h5,h6 {
+	font-family: 'Inter var';
+	font-weight: 700;
+	letter-spacing: -0.025em;
+}
+
+#profile-pic {
+	border-radius: 15px;
+}
+
+.text h1 {
+	font-size: calc(80px + 0.5vw);
+	line-height: 1em;
+}
+.test h2 {
+
+}
