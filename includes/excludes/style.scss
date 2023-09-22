@@ -1,5 +1,11 @@
 @import 'bootstrap';
 
+$primary-color: orange;
+
+.gray {
+	background-color:hsla(0, 0%, 95%, 1);
+}
+
 /* CSS */
 :root { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
@@ -20,14 +26,26 @@ h1, h2 ,h3,h4,h5,h6 {
 	letter-spacing: -0.025em;
 }
 
+a:link, a:visited {
+	color: darken($primary-color,10);
+	&:hover {
+		color: $primary-color;
+	}
+}
+
 #profile-pic {
-	border-radius: 15px;
+	// border-radius: 15px;
 }
 
 .text h1 {
 	font-size: calc(80px + 0.5vw);
 	line-height: 1em;
 }
-.test h2 {
 
+ul {
+  list-style-type: disc; /* or your preferred bullet style */
+  padding-left: 20px; /* Adjust the padding to create space between bullet and text */
+  li {
+  	margin-bottom: 0.75em;
+  }
 }

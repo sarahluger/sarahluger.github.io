@@ -11850,6 +11850,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.gray {
+  background-color: hsl(0, 0%, 95%);
+}
+
 /* CSS */
 :root {
   font-family: "Inter", sans-serif;
@@ -11874,11 +11878,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   letter-spacing: -0.025em;
 }
 
-#profile-pic {
-  border-radius: 15px;
+a:link, a:visited {
+  color: #cc8400;
+}
+a:link:hover, a:visited:hover {
+  color: orange;
 }
 
 .text h1, .text .h1 {
   font-size: calc(80px + 0.5vw);
   line-height: 1em;
+}
+
+ul {
+  list-style-type: disc; /* or your preferred bullet style */
+  padding-left: 20px; /* Adjust the padding to create space between bullet and text */
+}
+ul li {
+  margin-bottom: 0.75em;
 }
