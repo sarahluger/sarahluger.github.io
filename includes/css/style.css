@@ -11851,7 +11851,7 @@ textarea.form-control-lg {
   }
 }
 .gray {
-  background-color: hsl(0, 0%, 95%);
+  background-color: #f7f7ff;
 }
 
 /* CSS */
@@ -11869,7 +11869,7 @@ textarea.form-control-lg {
 }
 
 html, body {
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
