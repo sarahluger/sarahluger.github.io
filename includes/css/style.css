@@ -11851,7 +11851,7 @@ textarea.form-control-lg {
   }
 }
 .gray {
-  background-color: #f7f7ff;
+  background-color: #f2f2ff;
 }
 
 /* CSS */
@@ -11879,10 +11879,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 a:link, a:visited {
-  color: #cc8400;
+  color: #e65700;
 }
 a:link:hover, a:visited:hover {
-  color: orange;
+  color: #ff6100;
 }
 
 .text h1, .text .h1 {
@@ -11895,5 +11895,5 @@ ul {
   padding-left: 20px; /* Adjust the padding to create space between bullet and text */
 }
 ul li {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }

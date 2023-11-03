@@ -1,10 +1,11 @@
 @import 'bootstrap';
 
-$primary-color: orange;
+$primary-color: #ff6100;
 
 .gray {
 	// background-color:hsla(0, 0%, 95%, 1);
-	background-color: lighten(#f2f2ff,1%)
+	// background-color: lighten(#f2f2ff,1%)
+	background-color: #f2f2ff;
 }
 
 /* CSS */
@@ -28,14 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link, a:visited {
-	color: darken($primary-color,10);
+	color: darken($primary-color,5);
 	&:hover {
 		color: $primary-color;
 	}
 }
 
 #profile-pic {
-	// border-radius: 15px;
 }
 
 .text h1 {
@@ -48,6 +48,6 @@ ul {
   list-style-type: disc; /* or your preferred bullet style */
   padding-left: 20px; /* Adjust the padding to create space between bullet and text */
   li {
-  	margin-bottom: 0.75em;
+  	margin-bottom: 0.5em;
   }
 }
