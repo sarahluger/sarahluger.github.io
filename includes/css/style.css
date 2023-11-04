@@ -11897,7 +11897,7 @@ ul {
   padding-left: 20px; /* Adjust the padding to create space between bullet and text */
 }
 ul li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 .caption {
@@ -11910,4 +11910,16 @@ ul li {
 
 .emoji a {
   text-decoration: none;
+}
+
+.text-column {
+  column-count: 1;
+}
+.text-column h3, .text-column .h3 {
+  column-span: all;
+}
+@media only screen and (min-width: 960px) {
+  .text-column {
+    column-count: 2;
+  }
 }
