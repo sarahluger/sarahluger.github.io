@@ -4,3 +4,4 @@ config.codekit3
 *.codekit3
 *.sass-cache/
 includes/.DS_Store
+src/.DS_Store
