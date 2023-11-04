@@ -11880,9 +11880,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 a:link, a:visited {
   color: #e65700;
+  text-decoration: none;
 }
 a:link:hover, a:visited:hover {
   color: #ff6100;
+  text-decoration: underline;
 }
 
 .text h1, .text .h1 {
@@ -11896,4 +11898,16 @@ ul {
 }
 ul li {
   margin-bottom: 0.5em;
+}
+
+.caption {
+  font-size: 12px;
+  color: hsl(0, 0%, 60%);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.emoji a {
+  text-decoration: none;
 }
