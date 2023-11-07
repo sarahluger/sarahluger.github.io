@@ -11946,7 +11946,7 @@ ul li {
   }
   a:link:hover, a:visited:hover {
     color: #FF9A00;
-    text-decoration: none;
+    text-decoration: underline;
   }
   .content {
     background-color: black;
