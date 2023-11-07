@@ -11870,20 +11870,21 @@ textarea.form-control-lg {
 
 html, body {
   font-size: calc(14px + 0.5vw);
+  color: hsl(0, 0%, 40%);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Inter var";
   font-weight: 700;
   letter-spacing: -0.025em;
+  color: black;
 }
 
 a:link, a:visited {
-  color: #e65700;
+  color: navy;
   text-decoration: none;
 }
 a:link:hover, a:visited:hover {
-  color: #ff6100;
   text-decoration: underline;
 }
 
@@ -11921,5 +11922,36 @@ ul li {
 @media only screen and (min-width: 960px) {
   .text-column {
     column-count: 2;
+  }
+  .text-column li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+.papers {
+  font-size: 80%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: hsl(0, 0%, 10%);
+    color: #9996FF;
+  }
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: #FF9A00;
+  }
+  a:link, a:visited {
+    color: #CD98CD;
+  }
+  a:link:hover, a:visited:hover {
+    color: #FF9A00;
+    text-decoration: none;
+  }
+  .content {
+    background-color: black;
+  }
+  .caption {
+    color: #9996FF;
   }
 }

@@ -28,7 +28,7 @@
       </div>
 
       <div class='col-12 col-lg-6'>
-        <div class='rounded-3 gray h-100 py-5 px-4'>
+        <div class='content rounded-3 gray h-100 py-5 px-4'>
           <h1>Hello! I'm&nbsp;Sarah.</h1>
           <h4 class='py-2'>🤖 Let's chat about AI</h5>
           <ul>
@@ -45,7 +45,7 @@
 
     <row class='row my-3'>
       <div class='col-12'>
-        <div class='rounded-3 gray py-5 px-4 p-md-5'>
+        <div class='content rounded-3 gray py-5 px-4 p-md-5'>
 
           <h3 class='mb-3'>Podcasts</h3>
           <ul> 
@@ -60,7 +60,7 @@
 
     <row class='row my-3'>
       <div class='col-12'>
-        <div class='rounded-3 gray py-5 px-4 p-md-5 text-column'>
+        <div class='content rounded-3 gray py-5 px-4 p-md-5 papers text-column'>
 
           <h3 class='mb-3'>Papers</h3>
           <ul>
@@ -71,7 +71,6 @@
             <li><a href='https://ceur-ws.org/Vol-2884/' target='_blank'>Health Care Misinformation: An AI Challenge for Low-Resource Languages</a> @ AAAI Fall Symposium on AI for Social Good, Nov 2020
             <li><a href='https://www.humancomputation.com/2020/papers.html#wip' target='_blank'>Towards a Crowdsourcing Platform for Low Resource Languages - A Collectivist Approach</a> @ HCOMP, Oct 2020
             <li><a href='https://arxiv.org/abs/2004.00068' target='_blank'>Assessing Human Translations from French to Bambara for Machine Translation: A Pilot Study</a> @ ICLR, Mar 2020
-            <li><a href='https://arxiv.org/abs/2004.00068' target='_blank'>Assessing Human Translations from French to Bambara for Machine Learning: a Pilot Study</a>, Apr 2020
             <li><a href='https://www.humancomputation.com/2017/papers.html#wip' target='_blank'>Decomposing Difficult Tasks into More Simple Ones: Crowdsourcing Taxonomy Creation</a> @ HCOMP, Oct 2017
           </ul>
 
@@ -80,9 +79,10 @@
     </row>
 
   </div>
-  <div class='text-center my-6 caption'>
+  <footer class='text-center my-6 caption'>
     Copyright &copy; 2023 Dr. Sarah Luger
-  </div>
+    <div id="saying-display"></div>
+  </footer>
   
   <script type="application/ld+json">
   {
@@ -93,6 +93,28 @@
     "description": "Specializes in NLP research."
   }
   </script>
+
+  <script>
+      // Array of robot sayings
+      var robotSayings = [
+        "Danger, Will Robinson!",
+        "I'll be back.",
+        "Does not compute.",
+        "Exterminate!",
+        "I'm sorry, Dave, I'm afraid I can't do that.",
+        "Existence is pain to a Meeseeks.",
+        "Resistance is futile."
+      ];
+      // Function to display a random saying
+      function displayRandomSaying() {
+          var randomIndex = Math.floor(Math.random() * robotSayings.length);
+          var randomSaying = robotSayings[randomIndex];
+          document.getElementById("saying-display").textContent = randomSaying;
+      }
+      // Call the function initially and then set it to run every time the page loads
+      displayRandomSaying();
+
+  </script>  
 
 
 </body>

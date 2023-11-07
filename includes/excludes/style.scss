@@ -1,6 +1,19 @@
 @import 'bootstrap';
 
 $primary-color: #ff6100;
+// $link-color: darken(#ff6100, 25%);
+$link-color: navy;
+
+// LCARS variables
+$lcars-orange: #FF9A00;
+$lcars-lavender: #9996FF;
+$lcars-purple: $lcars-lavender;
+$lcars-pink: #CD98CD;
+$lcars-salmon: #CE6564;
+$lcars-white: #FFFFFF;
+// $lcars-grey: #222222;
+$lcars-grey: hsla(0, 0%, 10%, 1);
+$lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
 .gray {
 	// background-color:hsla(0, 0%, 95%, 1);
@@ -20,19 +33,21 @@ $primary-color: #ff6100;
 
 html, body {
 	font-size: calc(14px + 0.5vw);
+	color: hsla(0, 0%, 40%, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Inter var';
 	font-weight: 700;
 	letter-spacing: -0.025em;
+	color: black;
 }
 
 a:link, a:visited {
-	color: darken($primary-color,5);
+	color: $link-color;
 	text-decoration: none;
 	&:hover {
-		color: $primary-color;
+		// color: $primary-color;
 		text-decoration: underline;
 	}
 }
@@ -73,5 +88,44 @@ ul {
 	column-count: 1;
 	@media only screen and (min-width : $break-lg) { 
 		column-count: 2;
+		li {
+			break-inside: avoid;
+			page-break-inside: avoid;
+		}
 	}
+}
+
+.papers {
+	font-size: 80%;
+}
+
+// DARK MODE
+
+@mixin darkmode {
+    html, body {
+        background-color: $lcars-grey;
+        // background-color: black;
+        color: $lcars-purple;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    	color: $lcars-orange;
+    }
+    a:link, a:visited {
+    	color: $lcars-pink;
+    	&:hover {
+    		color: $lcars-orange;
+    		text-decoration: none;
+    	}
+    }
+    .content {
+      background-color: black;
+    	// background-color: hsla(0, 0%, 40%, 0.25);
+    }
+    .caption {
+    	color: $lcars-lavender;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    @include darkmode;
 }
