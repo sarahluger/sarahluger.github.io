@@ -11876,7 +11876,7 @@ html, body {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Inter var";
   font-weight: 700;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.0125em;
   color: black;
 }
 
@@ -11933,6 +11933,10 @@ ul li {
   font-size: 80%;
 }
 
+#portrait {
+  width: 100%;
+}
+
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: hsl(0, 0%, 10%);
@@ -11954,4 +11958,19 @@ ul li {
   .caption {
     color: #9996FF;
   }
+}
+.responsive-indicator {
+  z-index: 1000;
+  display: none;
+  background-color: red;
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+  padding: 3px 8px;
+}
+.responsive-indicator a:link, .responsive-indicator a:visited {
+  color: black;
+  text-decoration: underline;
 }

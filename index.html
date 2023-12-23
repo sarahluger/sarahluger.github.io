@@ -14,22 +14,22 @@
 </head>
 <body class='pt-2 pb-4'>
 
-  <div class='container-fluid d-flex'>
+  <div class='container-fluid'>
 
-    <row class='row gx-3 gy-3'>
+    <row class='row my-2 gx-3'>
 
-      <div class='col-12 col-lg-6'>
+      <div class='col-12 col-lg-6 col-xl-4'>
         <div class='h-100'>
           <picture>
             <source srcset='src/img/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
-            <img src='src/img/portrait.jpg' srcset='src/img/portrait@2x.jpg 2x' alt='portrait' class='img-fluid rounded-3'>
+            <img src='src/img/portrait.jpg' id='portrait' srcset='src/img/portrait@2x.jpg 2x' alt='portrait' class='img-fluid rounded-3'>
           </picture>
         </div>
       </div>
 
-      <div class='col-12 col-lg-6'>
-        <div class='content rounded-3 gray h-100 py-5 px-4'>
-          <h1>Hello! I'm&nbsp;Sarah.</h1>
+      <div class='col-12 col-lg-6 col-xl-8'>
+        <div class='content rounded-3 gray h-100 py-5 px-4 p-md-5'>
+          <h1>Hello! I'm&nbsp;Sarah, an AI thought leader specializing in NLP.</h1>
           <h4 class='py-2'>🤖 Let's chat about AI</h5>
           <ul>
             <li>Find me on <a href='https://www.linkedin.com/in/sarahluger/' target='_blank'>@linkedin</a>
@@ -39,13 +39,9 @@
       </div>
     </row>
 
-  </div>
-
-  <div class='container-fluid'>
-
-    <row class='row my-3'>
-      <div class='col-12'>
-        <div class='content rounded-3 gray py-5 px-4 p-md-5'>
+    <row class='row my-2 gx-3 gy-2'>
+      <div class='col-12 col-xl-6 my-2'>
+        <div class='content h-100 rounded-3 gray py-5 px-4 p-md-5'>
 
           <h3 class='mb-3'>Podcasts</h3>
           <ul> 
@@ -56,10 +52,8 @@
           </ul>
         </div>
       </div>
-    </row>
 
-    <row class='row my-3'>
-      <div class='col-12'>
+      <div class='col-12 col-xl-6 h-100 my-2'>
         <div class='content rounded-3 gray py-5 px-4 p-md-5 papers text-column'>
 
           <h3 class='mb-3'>Papers</h3>
@@ -79,8 +73,9 @@
     </row>
 
   </div>
+
   <footer class='text-center my-6 caption'>
-    Copyright &copy; 2023 Dr. Sarah Luger
+    Copyright &copy; 2024 Dr. Sarah Luger
     <div id="saying-display"></div>
   </footer>
   
@@ -116,6 +111,14 @@
 
   </script>  
 
+  <div class="responsive-indicator">
+    <div class="d-block d-sm-none">{xs}</div>
+    <div class="d-none d-sm-block d-md-none">{sm}</div>
+    <div class="d-none d-md-block d-lg-none">{md}</div>
+    <div class="d-none d-lg-block d-xl-none">{lg}</div>
+    <div class="d-none d-xl-block d-xxl-none">{xl}</div>
+    <div class="d-none d-xxl-block">{xxl}</div>
+  </div>
 
 </body>
 </html>
