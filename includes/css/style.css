@@ -11961,7 +11961,6 @@ ul li {
 }
 .responsive-indicator {
   z-index: 1000;
-  display: none;
   background-color: red;
   font-family: monospace;
   position: fixed;
