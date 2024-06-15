@@ -53,7 +53,7 @@ h1.hero {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: 800;
-	color: #9996FF;
+	color: $lcars-lavender;
 }
 
 a:link, a:visited {
@@ -127,11 +127,14 @@ ul {
 // }
 
 .button {
-	background-color: $lcars-orange;
+	background-color: lighten($lcars-lavender,10%);
 	display: inline-block;
 	padding: 10px 40px;
 	font-weight: 600;
 	border-radius: 50px;
+	&:hover {
+		background-color: $lcars-purple;
+	}
 }
 
 .papers {
