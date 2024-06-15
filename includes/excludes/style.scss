@@ -126,6 +126,12 @@ ul {
 // 	padding-right: 25vw !important;
 // }
 
+.img-fluid {
+	@media only screen and (min-width : $break-md) { 
+		width: 100%;
+	}
+}
+
 .button {
 	background-color: lighten($lcars-lavender,10%);
 	display: inline-block;
