@@ -13839,6 +13839,10 @@ textarea.form-control-lg {
   background-color: #f2f2ff;
 }
 
+.color-primary {
+  color: #ff6100;
+}
+
 /* CSS */
 :root {
   font-family: "Inter", sans-serif;
@@ -13864,6 +13868,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
   letter-spacing: -0.0125em;
   color: black;
+}
+
+h1.hero, .hero.h1 {
+  font-size: calc(20px + 3vw);
+}
+
+.superheadline {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #9996FF;
 }
 
 a:link, a:visited {
@@ -13926,12 +13941,6 @@ ul li {
   .text-column li {
     break-inside: avoid;
     page-break-inside: avoid;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .text-column-white {
-    max-width: 1200px;
   }
 }
 

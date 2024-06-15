@@ -20,6 +20,9 @@ $link-color: darken($gray,50%);;
 .gray {
 	background-color: $gray;
 }
+.color-primary {
+	color: $primary-color;
+}
 
 /* CSS */
 :root { font-family: 'Inter', sans-serif; }
@@ -42,6 +45,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	letter-spacing: -0.0125em;
 	color: black;
+}
+h1.hero {
+	font-size: calc(20px + 3vw);
+}
+.superheadline {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 800;
+	color: #9996FF;
 }
 
 a:link, a:visited {
@@ -108,12 +120,6 @@ ul {
 	}
 }
 
-
-.text-column-white {
-	@media only screen and (min-width : $break-lg) { 
-		max-width: 1200px;
-	}
-}
 
 // .content-text {
 // 	padding-left: 25vw !important;
