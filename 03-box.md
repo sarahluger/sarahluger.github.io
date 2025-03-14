@@ -1,0 +1,10 @@
+### Papers
+
+- [Resolving Subjective Crowd Disagreements: Population-Level Learning for Meaningful Crowd Opinions](https://aclanthology.org/2023.acl-long.54/) – Jul 2023  
+- [Findings from the Bambara - French Machine Translation Competition](https://aclanthology.org/2023.loresmt-1.9/) – @ BFMT 2023, May 2023  
+- [Domain-specific MT for Low-resource Languages: The case of Bambara-French](https://arxiv.org/abs/2104.00041) – Mar 2021  
+- [Neural Machine Translation for Extremely Low-Resource African Languages: A Case Study on Bambara](https://aclanthology.org/2020.loresmt-1.3/) – @ ACL Anthology, Dec 2020  
+- [Health Care Misinformation: An AI Challenge for Low-Resource Languages](https://ceur-ws.org/Vol-2884/) – @ AAAI Fall Symposium on AI for Social Good, Nov 2020  
+- [Towards a Crowdsourcing Platform for Low Resource Languages - A Collectivist Approach](https://www.humancomputation.com/2020/papers.html#wip) – @ HCOMP, Oct 2020  
+- [Assessing Human Translations from French to Bambara for Machine Translation: A Pilot Study](https://arxiv.org/abs/2004.00068) – @ ICLR, Mar 2020  
+- [Decomposing Difficult Tasks into More Simple Ones: Crowdsourcing Taxonomy Creation](https://www.humancomputation.com/2017/papers.html#wip) – @ HCOMP, Oct 2017  
