@@ -1,2 +1,2 @@
 # sarahluger.github.io
-It's a personal website
+The personal website of Sarah Luger, PHD
