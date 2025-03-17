@@ -13,7 +13,7 @@
 ### Invited Speaking
 
 - Forthcoming [University of Florida Data Science Spring Research Symposium](https://www.ufdsi.com/symposium) - Apr 2025
-- [AI Foresight and Technology Trend Identification Instruction at San Mateo Chamber of Commerce LeadForward Training] - Mar 2025
+- AI Foresight and Technology Trend Identification Instruction at San Mateo Chamber of Commerce LeadForward Training - Mar 2025
 - [Responsible Adoption of General Purpose AI, Official Partner of the Paris AI Action Summit](https://www.pecc.org/resources/digital-economy/2774-responsible-adoption-of-general-purpose-ai-1/file) - Sept 2024
 - [MLCommons AI Risk and Data Reliability Presentation at the Bay Area AI Safety Meetup](https://lu.ma/mveicrdm) - June 2024
 - [Ran the AI Safety and Removing Bias from Data Builds Panel at the Enterprise Generative AI Summit](https://aiml.events/events/enterprise-generative-ai-summit-west-coast-2024) - May 2024
