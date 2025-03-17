@@ -1,5 +1,8 @@
 ### Papers
-
+- Forthcoming [Building Data Infrastructure for Low-Resource Languages] to appear, LoResMT 2025, NAACL May 2025
+- [AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons](https://arxiv.org/abs/2503.05731) - Feb 2025
+- [Rater Cohesion and Quality from a Vicarious Perspective](https://arxiv.org/abs/2408.08411) - EMNLP Nov 2024
+- [Introducing v0.5 of the AI Safety Benchmark from MLCommons](https://arxiv.org/abs/2404.12241) - Apr 2024
 - [Resolving Subjective Crowd Disagreements: Population-Level Learning for Meaningful Crowd Opinions](https://aclanthology.org/2023.acl-long.54/) – Jul 2023  
 - [Findings from the Bambara - French Machine Translation Competition](https://aclanthology.org/2023.loresmt-1.9/) – @ BFMT 2023, May 2023  
 - [Domain-specific MT for Low-resource Languages: The case of Bambara-French](https://arxiv.org/abs/2104.00041) – Mar 2021  
