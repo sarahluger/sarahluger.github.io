@@ -1,7 +1,7 @@
 ### Workshops
 
--[Envisioning Humans in a Safe AI Future](https://www.sarahluger.com/workshop.html) -*Deep Learning Indaba 2024*
--[Empowering African Voices in AI](https://chrisemezue.github.io/empowering-african-voices.github.io/) -*Deep Learning Indaba 2024*
+- [Envisioning Humans in a Safe AI Future](https://www.sarahluger.com/workshop.html) -*Deep Learning Indaba 2024*
+- [Empowering African Voices in AI](https://chrisemezue.github.io/empowering-african-voices.github.io/) -*Deep Learning Indaba 2024*
 
 ### Podcasts  
 
