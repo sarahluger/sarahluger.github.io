@@ -13946,6 +13946,10 @@ ul li {
   }
 }
 
+#intro h1, #intro .h1 {
+  font-size: calc(30px + 1vw);
+}
+
 @media only screen and (min-width: 720px) {
   .img-fluid {
     width: 100%;
@@ -13964,13 +13968,36 @@ ul li {
   background-color: #9996FF;
 }
 
-.papers {
-  font-size: 80%;
-}
 .papers li {
   margin-bottom: 1em;
 }
 
+.portrait-box {
+  background-image: url("../../src/img/portrait.jpg");
+  background-size: cover; /* Ensures the image fully covers the box */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat;
+  width: 100%; /* Fills the column width */
+  height: 100%; /* Adjust based on container */
+  min-height: 300px; /* Ensures visibility even with minimal content */
+}
+
+@media only screen and (min-width: 400px) {
+  .portrait-box {
+    min-height: 420px;
+  }
+}
+/* Adjust for larger screens */
+@media only screen and (min-width: 768px) {
+  .portrait-box {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .portrait-box {
+    min-height: 500px;
+  }
+}
 #portrait {
   width: 100%;
 }
@@ -14004,6 +14031,7 @@ ul li {
   }
   .content {
     background-color: black;
+    font-size: 80%;
   }
   .caption {
     color: #9996FF;

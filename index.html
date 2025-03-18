@@ -67,37 +67,35 @@
 
   <div class='container-fluid'>
 
-    <row class='row my-2 gx-3'>
+<row class='row my-2 gx-3 d-flex align-items-stretch'>
 
-      <div class='col-12 col-lg-6 col-xl-5'>
-        <div class='h-100'>
-          <picture>
-            <source srcset='src/img/portrait@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
-            <img src='src/img/portrait.jpg' id='portrait' srcset='src/img/portrait@2x.jpg 2x' alt='portrait' class='img-fluid rounded-3'>
-          </picture>
-        </div>
-      </div>
+  <!-- Portrait Background Box -->
+  <div class='col-12 col-md-6 col-xl-5 d-flex'>
+    <div class='portrait-box rounded-3'></div>
+  </div>
 
-      <div class='col-12 col-lg-6 col-xl-7'>
-        <div id='intro' class='content rounded-3 gray h-100 px-5 px-lg-5 px-xxl-8 py-6 py-lg-5 py-xl-5 py-xxl-6'>
-          <!-- intro markdown replaced here -->
-        </div>
-      </div>
-    </row>
+  <!-- Intro Content -->
+  <div class='col-12 col-md-6 col-xl-7 d-flex'>
+    <div id='intro' class='content rounded-3 gray h-100 w-100 px-2 px-sm-4 px-lg-5 px-xxl-8 py-6 py-lg-5 py-xl-5 py-xxl-6'>
+      <!-- intro markdown replaced here -->
+    </div>
+  </div>
+</row>
 
-    <row class='row my-2 gx-3 gy-2'>
-      <div class='col-12 col-xl-6 my-2'>
-        <div id='02-box' class='content h-100 rounded-3 gray py-5 px-4 p-md-5'>
-          <!-- replaced by box 02 markdown -->
-        </div>
-      </div>
+<row class='row my-2 gx-3 gy-2 d-flex align-items-stretch'>
 
-      <div class='col-12 col-xl-6 h-100 my-2'>
-        <div id='03-box' class='content rounded-3 gray py-5 px-4 p-md-5 papers text-column'>
-          <!-- replaced by markdown 03-box -->
-        </div>
-      </div>
-    </row>
+  <div class='col-12 col-xl-6 d-flex'>
+    <div id='02-box' class='content h-100 w-100 rounded-3 gray py-5 px-4 p-md-5'>
+      <!-- replaced by box 02 markdown -->
+    </div>
+  </div>
+
+  <div class='col-12 col-xl-6 d-flex'>
+    <div id='03-box' class='content rounded-3 gray h-100 w-100 py-5 px-4 p-md-5 papers text-column'>
+      <!-- replaced by markdown 03-box -->
+    </div>
+  </div>
+</row>
 
   </div>
 
