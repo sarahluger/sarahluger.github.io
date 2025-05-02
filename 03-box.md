@@ -1,5 +1,5 @@
 ### Papers
-- Forthcoming [Building Data Infrastructure for Low-Resource Languages] to appear, LoResMT 2025, NAACL May 2025
+- Building Data Infrastructure for Low-Resource Languages (https://www.sarahluger.com/includes/pdf/Text_Language_Identification%20(5).pdf)Building Data Infrastructure for Low-Resource Languages - LoResMT 2025, NAACL May 2025
 - [AILuminate: Introducing v1.0 of the AI Risk and Reliability Benchmark from MLCommons](https://arxiv.org/abs/2503.05731) - Feb 2025
 - [Rater Cohesion and Quality from a Vicarious Perspective](https://arxiv.org/abs/2408.08411) - EMNLP Nov 2024
 - [Introducing v0.5 of the AI Safety Benchmark from MLCommons](https://arxiv.org/abs/2404.12241) - Apr 2024
