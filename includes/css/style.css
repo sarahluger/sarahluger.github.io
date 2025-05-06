@@ -14006,41 +14006,6 @@ ul li {
   width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background-color: hsl(0, 0%, 10%);
-    color: #9996FF;
-  }
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    color: #FF9A00;
-  }
-  a:link, a:visited {
-    color: #CD98CD;
-  }
-  a:link:hover, a:visited:hover {
-    color: #FF9A00;
-    text-decoration: underline;
-  }
-  header .header-logo {
-    color: #9996FF;
-  }
-  header .fa-linkedin-in {
-    color: #CD98CD;
-  }
-  header .fa-linkedin-in:hover {
-    color: #FF9A00;
-  }
-  .gray {
-    background-color: #262626;
-  }
-  .content {
-    background-color: black;
-    font-size: 80%;
-  }
-  .caption {
-    color: #9996FF;
-  }
-}
 .responsive-indicator {
   z-index: 1000;
   display: none;
