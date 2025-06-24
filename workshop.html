@@ -24,9 +24,11 @@
 
   gtag('config', 'G-3FMH1K7SZ6');
 </script>
+<!-- Google tag (gtag.js) -->
 
 <body class='pt-2'>
 
+  <!-- HEADER NAV -->
   <header class='container-fluid py-3 py-md-4 px-4 px-md-5'>
     <div class='row'>
       <div class='d-flex align-items-center justify-content-between'>
@@ -42,9 +44,11 @@
 
   <div class='container-fluid px-4 px-md-5'>
     
-    <row class='row justify-content-between'>
+    <row class='row'>
 
-      <div class='col-12 mb-4'>
+      <!-- HEADER IMAGE -->
+      <div class='col-12 mb-4 pe-0'>
+
         <picture class='d-block d-md-block d-lg-none'>
           <source srcset='src/img/workshop/hero-mobile/hero-mobile@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
           <source srcset='src/img/workshop/hero-mobile/hero-mobile@2x.webp 2x' type='image/webp' media='(min-width: 800px)'>
@@ -53,6 +57,7 @@
           <source srcset='src/img/workshop/hero-mobile/hero-mobile.jpg' media='(min-resolution: 1dppx)'>
           <img class='img-fluid' src='src/img/workshop/hero-mobile/hero-mobile.jpg' srcset='src/img/workshop/hero-mobile/hero-mobile@2x.jpg 2x' alt='src/img/workshop/hero-mobile/hero-mobile.jpg' >
         </picture>
+
         <picture class='d-none d-md-none d-lg-block'>
           <source srcset='src/img/workshop/hero/hero@3x.webp 3x' type='image/webp' media='(min-width: 1200px)'>
           <source srcset='src/img/workshop/hero/hero@2x.webp 2x' type='image/webp' media='(min-width: 800px)'>
@@ -61,25 +66,31 @@
           <source srcset='src/img/workshop/hero/hero.jpg' media='(min-resolution: 1dppx)'>
           <img class='img-fluid' src='src/img/workshop/hero.png' alt=''>
         </picture>
+
       </div>
+      <!-- HEADER IMAGE -->
+    </row>
 
-      <div class='col-12 col-lg-7 pr-4'>
+    <row class='row justify-content-sm-between justify-content-lg-center'>
 
-        <p class='superheadline'>Deep Learning Indaba 2024 Workshop</p>
-        <h1 class='hero'>Envisioning Humans in a Safe, AI&nbsp;Future</h1>
-        <h4 class=''>September 7, from 8AM to 12:30PM in the auditorium at Amadou Mahtar Mbow University (UAM) in Dakar, Senegal</h4>
+      <!-- MAIN CONTENT -->
+      <div class='col-12 col-lg-6 pe-5'>
 
-        <h2 class='mt-4'>Abstract</h2>
+        <p class='superheadline mb-1'>Deep Learning Indaba 2024 Workshop</p>
+        <h1 class='hero mb-2'>Envisioning Humans in a Safe, AI&nbsp;Future</h1>
+        <p class=''><strong>September 7, from 8AM to 12:30PM in the auditorium at Amadou Mahtar Mbow University (UAM) in Dakar, Senegal</strong></p>
+
+        <h5 class='mt-4'>Abstract</h5>
         <p class=''>
           This workshop explores the ethical, safe, and innovative application of artificial intelligence, focusing on human-centered approaches. Participants will engage in expert-led sessions, interactive discussions, and collaborative activities, addressing both established and emerging challenges within AI. Focusing on the Global South, the workshop aims to share innovative solutions, critically analyze methodologies, and foster impactful collaborations across academia and industry. Our sessions will stimulate discussions on controversial and emerging AI topics and promote new partnerships, shaping future research and practice in AI Safety. 
         </p>
 
-        <h2 class='mt-4'>Target Audience</h2>
+        <h5 class='mt-4'>Target Audience</h5>
         <p class=''>
           This workshop is designed for AI researchers and enthusiasts, ML practitioners, data scientists, and legal experts engaged in or interested in AI Safety and responsible AI development within African contexts. It will also be valuable for stakeholders from global data training companies, open-source data benchmark consortia, and technology firms operating in Africa.
         </p>
 
-        <h2 class='mt-4'>Workshop Objectives and Goals</h2>
+        <h5 class='mt-4'>Workshop Objectives and Goals</h5>
         <ul>
           <li>Deepen understanding of ethical, safe, and innovative AI in the Global South.
           <li>Encourage discussions on controversial and emerging topics.
@@ -89,7 +100,7 @@
         </ul>
 
       
-        <h2 class='mt-4'>Ongoing Research</h2>
+        <h5 class='mt-4'>Ongoing Research</h5>
         <p>
           This workshop is the first in the series "Centering Humans in a Safe AI Future" that covers the following topics and subtopics:
         </p>
@@ -109,8 +120,10 @@
         </p>
 
       </div>
+      <!-- MAIN CONTENT -->
 
-      <div class='col-12 col-lg-4 my-4 rounded-3 gray h-100'>
+      <!-- SIDEBAR -->
+      <div class='col-12 col-lg-4 px-4 rounded-3 gray h-100 sidebar'>
 
         <h5 class='mt-4'>DETAILS</h5>
         <p>September 7, from 8AM to 12:30PM in the auditorium at Amadou Mahtar Mbow University (UAM) in Dakar, Senegal</p>
@@ -210,16 +223,19 @@
         </p>       
 
       </div>  
+      <!-- SIDEBAR -->
 
     </row>
 
   </div> <!-- container fluid -->
 
+  <!-- FOOTER -->
   <footer class='text-center my-6 caption'>
     Site built by <a href='https://www.rayuen.com'>Ray</a>. <span id='saying-display'></span>
     <!-- <div id="saying-display"></div> -->
   </footer>
   
+  <!-- METADATA -->
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -230,6 +246,7 @@
   }
   </script>
 
+  <!-- RANDOM SCRIPT GENERATOR -->
   <script>
       // Array of robot sayings
       var robotSayings = [
@@ -252,6 +269,7 @@
 
   </script>  
 
+  <!-- RESPONSIVE TAG FOR DEV -->
   <div class="responsive-indicator">
     <div class="d-block d-sm-none">{xs}</div>
     <div class="d-none d-sm-block d-md-none">{sm}</div>
