@@ -54,10 +54,14 @@ html, body {
 	letter-spacing: 0.02em;
 }
 
+hr.thick {
+	border: 2px solid $lcars-grey-lite;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Inter var';
 	font-weight: 700;
-	// letter-spacing: -0.0025em;
+	letter-spacing: -0.0025em;
 	color: black;
 }
 
@@ -65,7 +69,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  letter-spacing: -0.0025em;
 }
 
 h2 {
@@ -75,22 +78,25 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
 }
 
 h4 {
   font-size: 1.25em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
+  font-weight: 650;
 }
 
 h5 {
   font-size: 1.15em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
+  font-weight: 650;
 }
 
 h6 {
   font-size: 1em;
   margin-bottom: 0.5em;
+  font-weight: 600;
 }
 
 h1.hero {
@@ -103,6 +109,11 @@ h1.hero {
 	letter-spacing: 2px;
 	font-weight: 800;
 	color: $lcars-lavender;
+}
+.subheadline {
+	font-weight: 500;
+	letter-spacing: 0;
+	color: $lcars-grey;
 }
 
 a:link, a:visited {
@@ -151,11 +162,11 @@ ul {
 }
 
 .caption {
-	font-size: 12px;
+	font-size: calc(12px + 0.25vw);
 	color: hsla(0, 0%, 60%, 1);
-	font-weight: 700;
+	// font-weight: 600;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 }
 
 .emoji a {
@@ -183,13 +194,13 @@ ul {
 }
 
 .sidebar {
-	font-size: 80%;
+	font-size: 70%;
 }
 
 .img-fluid {
-	@media only screen and (min-width : $break-md) { 
+	// @media only screen and (min-width : $break-md) { 
 		width: 100%;
-	}
+	// }
 }
 
 .button {
@@ -202,6 +213,19 @@ ul {
 	color: darken($lcars-lavender,70%);
 	&:hover {
 		background-color: $lcars-purple;
+	}
+}
+
+.button-primary {
+	// font-size: calc(16px + 0.5vw);
+	background-color: lighten($lcars-orange,20%);
+	display: inline-block;
+	padding: 4px 15px;
+	font-weight: 600;
+	border-radius: 50px;
+	color: darken($lcars-orange,70%);
+	&:hover {
+		background-color: $lcars-orange;
 	}
 }
 

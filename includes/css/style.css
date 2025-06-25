@@ -13869,9 +13869,14 @@ html, body {
   letter-spacing: 0.02em;
 }
 
+hr.thick {
+  border: 2px solid hsl(0, 0%, 70%);
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Inter var";
   font-weight: 700;
+  letter-spacing: -0.0025em;
   color: black;
 }
 
@@ -13879,7 +13884,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 h1, .h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  letter-spacing: -0.0025em;
 }
 
 h2, .h2 {
@@ -13889,22 +13893,25 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
 }
 
 h4, .h4 {
   font-size: 1.25em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
+  font-weight: 650;
 }
 
 h5, .h5 {
   font-size: 1.15em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.65em;
+  font-weight: 650;
 }
 
 h6, .h6 {
   font-size: 1em;
   margin-bottom: 0.5em;
+  font-weight: 600;
 }
 
 h1.hero, .hero.h1 {
@@ -13916,6 +13923,12 @@ h1.hero, .hero.h1 {
   letter-spacing: 2px;
   font-weight: 800;
   color: #9996FF;
+}
+
+.subheadline {
+  font-weight: 500;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 10%);
 }
 
 a:link, a:visited {
@@ -13961,11 +13974,9 @@ ul li {
 }
 
 .caption {
-  font-size: 12px;
+  font-size: calc(12px + 0.25vw);
   color: hsl(0, 0%, 60%);
-  font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .emoji a {
@@ -13993,13 +14004,11 @@ ul li {
 }
 
 .sidebar {
-  font-size: 80%;
+  font-size: 70%;
 }
 
-@media only screen and (min-width: 720px) {
-  .img-fluid {
-    width: 100%;
-  }
+.img-fluid {
+  width: 100%;
 }
 
 .button {
@@ -14012,6 +14021,18 @@ ul li {
 }
 .button:hover {
   background-color: #9996FF;
+}
+
+.button-primary {
+  background-color: #ffc266;
+  display: inline-block;
+  padding: 4px 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  color: black;
+}
+.button-primary:hover {
+  background-color: #FF9A00;
 }
 
 .papers li {
