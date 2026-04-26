@@ -415,3 +415,81 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: black;
+    color: #9996FF;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #FF9A00;
+  }
+  a:link, a:visited {
+    color: #FFFFFF;
+  }
+  a:link:hover, a:visited:hover {
+    color: #FF9A00;
+    text-decoration: underline;
+  }
+  header .header-logo {
+    color: #9996FF;
+  }
+  header .fa-linkedin-in {
+    color: #CD98CD;
+  }
+  header .fa-linkedin-in:hover {
+    color: #FF9A00;
+  }
+  .gray {
+    background-color: hsl(0, 0%, 9%);
+  }
+  .content {
+    background-color: hsl(0, 0%, 9%);
+  }
+  .caption {
+    color: #9996FF;
+  }
+  .activity-card {
+    background: hsl(0, 0%, 9%);
+    border-color: #333333;
+  }
+  .activity-card:hover {
+    border-color: #9996FF;
+  }
+  .card-title {
+    color: #9996FF;
+  }
+  .card-title a:link, .card-title a:visited {
+    color: #9996FF;
+  }
+  .card-title a:hover {
+    color: #FF9A00;
+  }
+  .card-meta {
+    color: hsl(0, 0%, 70%);
+  }
+  .pill-workshop {
+    color: #CE6564;
+  }
+  .pill-podcast {
+    color: #CD98CD;
+  }
+  .pill-speaking {
+    color: #FF9A00;
+  }
+  .paper-item {
+    border-top-color: #333333;
+  }
+  .paper-venue {
+    color: hsl(0, 0%, 70%);
+  }
+  .paper-title {
+    color: #9996FF;
+  }
+  .paper-title a:link, .paper-title a:visited {
+    color: #9996FF;
+  }
+  .paper-title a:hover {
+    color: #FF9A00;
+  }
+}

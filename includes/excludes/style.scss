@@ -25,7 +25,7 @@ $lcars-purple: $lcars-lavender;
 $lcars-pink: #CD98CD;
 $lcars-salmon: #CE6564;
 $lcars-white: #FFFFFF;
-// $lcars-grey: #222222;
+$lcars-grey-dark: hsla(0, 0%, 9%, 1);
 $lcars-grey: hsla(0, 0%, 10%, 1);
 $lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
@@ -300,15 +300,14 @@ footer {
 
 @mixin darkmode {
     html, body {
-        background-color: $lcars-grey;
-        // background-color: black;
+        background-color: black;
         color: $lcars-purple;
-    }    
+    }
     h1, h2, h3, h4, h5, h6 {
     	color: $lcars-orange;
     }
     a:link, a:visited {
-    	color: $lcars-pink;
+    	color: $lcars-white;
     	&:hover {
     		color: $lcars-orange;
     		text-decoration: underline;
@@ -327,24 +326,39 @@ footer {
 			}
 		}    
 		.gray {
-			background-color: color.adjust(black, $lightness: 15%);
+			background-color: $lcars-grey-dark;
 		}
     .content {
-      background-color: black;
-      font-size: 80%;
-    	// background-color: hsla(0, 0%, 40%, 0.25);
+      background-color: $lcars-grey-dark;
     }
     .caption {
     	color: $lcars-lavender;
+    }
+    .activity-card {
+        background: $lcars-grey-dark;
+        border-color: #333333;
+        &:hover { border-color: $lcars-lavender; }
+    }
+    .card-title {
+        color: $lcars-lavender;
+        a:link, a:visited { color: $lcars-lavender; }
+        a:hover { color: $lcars-orange; }
+    }
+    .card-meta { color: $lcars-grey-lite; }
+    .pill-workshop  { color: $lcars-salmon; }
+    .pill-podcast   { color: $lcars-pink; }
+    .pill-speaking  { color: $lcars-orange; }
+    .paper-item { border-top-color: #333333; }
+    .paper-venue { color: $lcars-grey-lite; }
+    .paper-title {
+        color: $lcars-lavender;
+        a:link, a:visited { color: $lcars-lavender; }
+        a:hover { color: $lcars-orange; }
     }
 }
 
 #portrait {
 	width: 100%;
-}
-
-@media (prefers-color-scheme: dark) {
-    // @include darkmode;
 }
 
 /* ── Heading color override ───────────────────────── */
@@ -476,4 +490,8 @@ h1, h2, h3, h4, h5, h6 { color: #2c3b45; }
       color: black;
       text-decoration: underline;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+    @include darkmode;
 }
