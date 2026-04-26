@@ -1,4 +1,4 @@
-@import 'bootstrap';
+@use 'sass:color';
 
 * {
   box-sizing: border-box;
@@ -17,6 +17,7 @@ $lg: "only screen and (min-width : 1200px)";
 $gray: #f2f2ff;
 // $link-color: darken(#ff6100, 25%);
 // $link-color: navy;
+
 // LCARS variables
 $lcars-orange: #FF9A00;
 $lcars-lavender: #9996FF;
@@ -29,7 +30,7 @@ $lcars-grey: hsla(0, 0%, 10%, 1);
 $lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
 $primary-color: #ff6100;
-$link-color: darken($gray,50%);;
+$link-color: color.adjust($gray, $lightness: -50%);
 
 $font-body-size: calc(14px + 0.5vw);
 
@@ -43,6 +44,7 @@ $font-body-size: calc(14px + 0.5vw);
 
 // HELPERS
 .viz {
+	border: 2px solid pink;
 	border: 2px solid pink;
 }
 
@@ -164,9 +166,21 @@ ul {
 .caption {
 	font-size: calc(12px + 0.25vw);
 	color: hsla(0, 0%, 60%, 1);
-	// font-weight: 600;
 	letter-spacing: 0.05em;
-	// text-transform: uppercase;
+	font-weight: 600;
+}
+
+footer {
+	font-weight: 400;
+	a:link, a:visited {
+		color: #1A56A0;
+		opacity: 1;
+		font-weight: inherit;
+		text-decoration: none;
+	}
+	a:hover {
+		color: $lcars-orange;
+	}
 }
 
 .emoji a {
@@ -178,7 +192,7 @@ ul {
 		column-span: all;
 	}
 	column-count: 1;
-	@media only screen and (min-width : $break-lg) { 
+	@media only screen and (min-width : 992px) {
 		column-count: 2;
 		li {
 			break-inside: avoid;
@@ -189,7 +203,13 @@ ul {
 
 #intro {
 	h1 {
-		font-size: calc(30px + 1vw);
+		font-size: calc(20px + 1.5vw);
+		@media (min-width: 768px) {
+			font-size: calc(26px + 1vw);
+		}
+		@media (min-width: 992px) {
+			font-size: calc(30px + 1vw);
+		}
 	}
 }
 
@@ -205,12 +225,12 @@ ul {
 
 .button {
 	// font-size: calc(16px + 0.5vw);
-	background-color: lighten($lcars-lavender,10%);
+	background-color: color.adjust($lcars-lavender, $lightness: 10%);
 	display: inline-block;
 	padding: 0.25em 1em;
 	font-weight: 600;
 	border-radius: 50px;
-	color: darken($lcars-lavender,70%);
+	color: color.adjust($lcars-lavender, $lightness: -70%);
 	&:hover {
 		background-color: $lcars-purple;
 	}
@@ -221,12 +241,12 @@ ul {
 
 .button-primary {
 	// font-size: calc(16px + 0.5vw);
-	background-color: lighten($lcars-orange,20%);
+	background-color: color.adjust($lcars-orange, $lightness: 20%);
 	display: inline-block;
 	// padding: 4px 15px;
 	font-weight: 600;
 	border-radius: 50px;
-	color: darken($lcars-orange,70%);
+	color: color.adjust($lcars-orange, $lightness: -70%);
 	&:hover {
 		background-color: $lcars-orange;
 	}
@@ -307,7 +327,7 @@ ul {
 			}
 		}    
 		.gray {
-			background-color: lighten(black,15%);
+			background-color: color.adjust(black, $lightness: 15%);
 		}
     .content {
       background-color: black;
@@ -325,6 +345,121 @@ ul {
 
 @media (prefers-color-scheme: dark) {
     // @include darkmode;
+}
+
+/* ── Heading color override ───────────────────────── */
+h1, h2, h3, h4, h5, h6 { color: #2c3b45; }
+.card-title, .paper-title { color: #2c3b45; }
+
+/* ── Shared section label ─────────────────────────── */
+.cards-section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsla(0, 0%, 55%, 1);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+/* ── Activity Cards ───────────────────────────────── */
+.activity-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .activity-cards {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+.activity-card {
+  background: #f5f5ff;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  transition: border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-card:hover { border-color: #aaaaaa; }
+
+.category-pill {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.4rem;
+}
+
+.pill-workshop  { color: #9C3D00; }
+.pill-podcast   { color: #3B6D11; }
+.pill-speaking  { color: #1A56A0; }
+
+.card-title {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+  a:link, a:visited {
+    color: inherit;
+    opacity: 1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a:hover { color: #E85D00; }
+}
+
+.card-meta {
+  font-size: 0.75em;
+  color: hsla(0, 0%, 50%, 1);
+  margin: auto 0 0;
+  padding-top: 0.5rem;
+}
+
+/* ── Papers ───────────────────────────────────────── */
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0 2rem;
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+#papers-grid {
+  margin-top: 2rem;
+}
+
+.paper-item {
+  border-top: 1.5px solid #d0d0d0;
+  padding: 10px 0 1.25rem;
+}
+
+.paper-venue {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: hsla(0, 0%, 55%, 1);
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.paper-title {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0;
+  a:link, a:visited {
+    color: inherit;
+    opacity: 1;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a:hover { color: #E85D00; }
 }
 
 .responsive-indicator {
