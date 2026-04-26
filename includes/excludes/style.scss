@@ -7,16 +7,7 @@
 }
 
 // VARIABLES
-$system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-
-$xs: "only screen and (min-width : 480px)";
-$sm: "only screen and (min-width : 767px)";
-$md: "only screen and (min-width : 992px)";
-$lg: "only screen and (min-width : 1200px)";
-
 $gray: #f2f2ff;
-// $link-color: darken(#ff6100, 25%);
-// $link-color: navy;
 
 // LCARS variables
 $lcars-orange: #FF9A00;
@@ -25,8 +16,8 @@ $lcars-purple: $lcars-lavender;
 $lcars-pink: #CD98CD;
 $lcars-salmon: #CE6564;
 $lcars-white: #FFFFFF;
-$lcars-grey-dark: hsla(0, 0%, 9%, 1);
-$lcars-grey: hsla(0, 0%, 10%, 1);
+$lcars-grey: hsla(0, 0%, 50%, 1);
+$lcars-grey-dark: hsla(0, 0%, 10%, 1);
 $lcars-grey-lite: hsla(0, 0%, 70%, 1);
 
 $primary-color: #ff6100;
@@ -34,8 +25,8 @@ $link-color: color.adjust($gray, $lightness: -50%);
 
 $font-body-size: calc(14px + 0.5vw);
 
-.gray {background-color: $gray; }
-.color-primary {color: $primary-color; }
+.gray { background-color: $gray; }
+.color-primary { color: $primary-color; }
 
 :root { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
@@ -44,321 +35,207 @@ $font-body-size: calc(14px + 0.5vw);
 
 // HELPERS
 .viz {
-	border: 2px solid pink;
-	border: 2px solid pink;
+  border: 2px solid pink;
 }
 
 // CSS
 html, body {
-	font-size: $font-body-size;
-	color: hsla(0, 0%, 10%, 0.8);
-	font-weight: 300;
-	letter-spacing: 0.02em;
+  font-size: $font-body-size;
+  color: hsla(0, 0%, 10%, 0.8);
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 hr.thick {
-	border: 2px solid $lcars-grey-lite;
+  border: 2px solid $lcars-grey-lite;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Inter var';
-	font-weight: 700;
-	letter-spacing: -0.0025em;
-	color: black;
+  font-family: 'Inter var';
+  font-weight: 700;
+  letter-spacing: -0.0025em;
+  color: black;
 }
 
 /* Heading styles */
-h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.75em;
-  margin-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin-bottom: 0.65em;
-}
-
-h4 {
-  font-size: 1.25em;
-  margin-bottom: 0.65em;
-  font-weight: 650;
-}
-
-h5 {
-  font-size: 1.15em;
-  margin-bottom: 0.65em;
-  font-weight: 650;
-}
-
-h6 {
-  font-size: 1em;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-}
-
-h1.hero {
-	font-weight: 700;
-	// letter-spacing: -0.0025em;
-	// font-size: calc(20px + 1vw);
-}
-.superheadline {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 800;
-	color: $lcars-lavender;
-}
-.subheadline {
-	font-weight: 500;
-	letter-spacing: 0;
-	color: $lcars-grey;
-}
+h1 { font-size: 2em; margin-bottom: 0.5em; }
+h2 { font-size: 1.75em; margin-bottom: 0.5em; }
+h3 { font-size: 1.5em; margin-bottom: 0.65em; }
+h4 { font-size: 1.25em; margin-bottom: 0.65em; font-weight: 650; }
+h5 { font-size: 1.15em; margin-bottom: 0.65em; font-weight: 650; }
+h6 { font-size: 1em; margin-bottom: 0.5em; font-weight: 600; }
 
 a:link, a:visited {
-	color: $link-color;
-	opacity: 0.75;
-	text-decoration: none;
-	font-weight: 500;
-	&:hover {
-		color: black;
-		// text-decoration: underline;
-	}
+  color: $link-color;
+  opacity: 0.75;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover {
+    color: black;
+  }
 }
 
 header {
-	.header-logo {
-		font-size: calc(20px + 0.75vw);
-		font-weight: 600;
-		color: black;
-	}
-	.fa-linkedin-in {
-		color: black;
-		&:hover {
-	    color: $link-color;
-		}
-	}
-	a:link, a:visited {
-		font-weight: 600;
-		color: black;
-		&:hover {
-			color: $lcars-orange;
-		}
-	}
-}
-
-.text h1 {
-	font-size: calc(80px + 0.5vw);
-	line-height: 1em;
+  .header-logo {
+    font-size: calc(20px + 0.75vw);
+    font-weight: 600;
+    color: black;
+  }
+  .fa-linkedin-in {
+    color: black;
+    &:hover {
+      color: $link-color;
+    }
+  }
+  a:link, a:visited {
+    font-weight: 600;
+    color: black;
+    &:hover {
+      color: $lcars-orange;
+    }
+  }
 }
 
 ul {
-  list-style-type: disc; /* or your preferred bullet style */
-  padding-left: 20px; /* Adjust the padding to create space between bullet and text */
+  list-style-type: disc;
+  padding-left: 20px;
   li {
-  	margin-bottom: 0.25em;
+    margin-bottom: 0.25em;
   }
 }
 
 .caption {
-	font-size: calc(12px + 0.25vw);
-	color: hsla(0, 0%, 60%, 1);
-	letter-spacing: 0.05em;
-	font-weight: 600;
+  font-size: calc(12px + 0.25vw);
+  color: hsla(0, 0%, 60%, 1);
+  letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 footer {
-	font-weight: 400;
-	a:link, a:visited {
-		color: #1A56A0;
-		opacity: 1;
-		font-weight: inherit;
-		text-decoration: none;
-	}
-	a:hover {
-		color: $lcars-orange;
-	}
+  font-weight: 400;
+  a:link, a:visited {
+    color: #1A56A0;
+    opacity: 1;
+    font-weight: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $lcars-orange;
+  }
 }
 
 .emoji a {
-	text-decoration: none;
-} 
+  text-decoration: none;
+}
 
 .text-column {
-	h3 {
-		column-span: all;
-	}
-	column-count: 1;
-	@media only screen and (min-width : 992px) {
-		column-count: 2;
-		li {
-			break-inside: avoid;
-			page-break-inside: avoid;
-		}
-	}
+  h3 {
+    column-span: all;
+  }
+  column-count: 1;
+  @media only screen and (min-width: 992px) {
+    column-count: 2;
+    li {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
 }
 
 #intro {
-	h1 {
-		font-size: calc(20px + 1.5vw);
-		@media (min-width: 768px) {
-			font-size: calc(26px + 1vw);
-		}
-		@media (min-width: 992px) {
-			font-size: calc(30px + 1vw);
-		}
-	}
-}
-
-.sidebar {
-	font-size: 70%;
-}
-
-.img-fluid {
-	// @media only screen and (min-width : $break-md) { 
-		width: 100%;
-	// }
-}
-
-.button {
-	// font-size: calc(16px + 0.5vw);
-	background-color: color.adjust($lcars-lavender, $lightness: 10%);
-	display: inline-block;
-	padding: 0.25em 1em;
-	font-weight: 600;
-	border-radius: 50px;
-	color: color.adjust($lcars-lavender, $lightness: -70%);
-	&:hover {
-		background-color: $lcars-purple;
-	}
-}
-.small-text {
-	font-size: 80%;
-}
-
-.button-primary {
-	// font-size: calc(16px + 0.5vw);
-	background-color: color.adjust($lcars-orange, $lightness: 20%);
-	display: inline-block;
-	// padding: 4px 15px;
-	font-weight: 600;
-	border-radius: 50px;
-	color: color.adjust($lcars-orange, $lightness: -70%);
-	&:hover {
-		background-color: $lcars-orange;
-	}
-}
-
-.papers {
-	// font-size: 80%;
-	li {
-		margin-bottom: 1em;
-	}
+  h1 {
+    font-size: calc(20px + 1.5vw);
+    @media (min-width: 768px) {
+      font-size: calc(26px + 1vw);
+    }
+    @media (min-width: 992px) {
+      font-size: calc(30px + 1vw);
+    }
+  }
 }
 
 .portrait-box {
-    background-image: url('../../src/img/portrait.jpg');
-    // background-size: cover;  /* Ensures the image fully covers the box */
-    // background-position: center center; /* Centers the image */
-    // background-repeat: no-repeat;
-    // width: 100%; /* Fills the column width */
-    // height: 100%; /* Adjust based on container */
-    // min-height: 300px; /* Ensures visibility even with minimal content */
-    background-color: #ff6100;
-    background-size: contain; /* Ensures the whole image is always visible */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat;
-    width: 100%; /* Fills the column width */
-    height: 100%; /* Adjusts based on container */
-    min-height: 300px; /* Ensures visibility even with minimal content */
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-@media only screen and (min-width: 400px) {
-    .portrait-box {
-        min-height: 420px;
-    }
-}
-/* Adjust for larger screens */
-@media only screen and (min-width: 768px) {
-    .portrait-box {
-        min-height: 400px;
-    }
+  background-image: url('../../src/img/portrait.jpg');
+  background-color: #ff6100;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+@media only screen and (min-width: 400px) {
+  .portrait-box { min-height: 420px; }
+}
+@media only screen and (min-width: 768px) {
+  .portrait-box { min-height: 400px; }
+}
 @media only screen and (min-width: 1200px) {
-    .portrait-box {
-        min-height: 500px;
-    }
+  .portrait-box { min-height: 500px; }
 }
 
 // DARK MODE
 
 @mixin darkmode {
-    html, body {
-        background-color: black;
-        color: $lcars-purple;
+  html, body {
+    background-color: black;
+    color: $lcars-purple;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $lcars-orange;
+  }
+  a:link, a:visited {
+    color: $lcars-white;
+    &:hover {
+      color: $lcars-orange;
+      text-decoration: underline;
     }
-    h1, h2, h3, h4, h5, h6 {
-    	color: $lcars-orange;
+  }
+  header {
+    .header-logo { color: $lcars-lavender; }
+    .fa-linkedin-in {
+      color: $lcars-pink;
+      &:hover { color: $lcars-orange; }
     }
     a:link, a:visited {
-    	color: $lcars-white;
-    	&:hover {
-    		color: $lcars-orange;
-    		text-decoration: underline;
-    	}
+      color: $lcars-lavender;
+      &:hover { color: $lcars-orange; }
     }
-
-		header {
-			.header-logo {
-				color: $lcars-lavender;
-			}
-			.fa-linkedin-in {
-				color: $lcars-pink;
-				&:hover {
-			    color: $lcars-orange;
-				}
-			}
-		}    
-		.gray {
-			background-color: $lcars-grey-dark;
-		}
-    .content {
-      background-color: $lcars-grey-dark;
-    }
-    .caption {
-    	color: $lcars-lavender;
-    }
-    .activity-card {
-        background: $lcars-grey-dark;
-        border-color: #333333;
-        &:hover { border-color: $lcars-lavender; }
-    }
-    .card-title {
-        color: $lcars-lavender;
-        a:link, a:visited { color: $lcars-lavender; }
-        a:hover { color: $lcars-orange; }
-    }
-    .card-meta { color: $lcars-grey-lite; }
-    .pill-workshop  { color: $lcars-salmon; }
-    .pill-podcast   { color: $lcars-pink; }
-    .pill-speaking  { color: $lcars-orange; }
-    .paper-item { border-top-color: #333333; }
-    .paper-venue { color: $lcars-grey-lite; }
-    .paper-title {
-        color: $lcars-lavender;
-        a:link, a:visited { color: $lcars-lavender; }
-        a:hover { color: $lcars-orange; }
-    }
-}
-
-#portrait {
-	width: 100%;
+  }
+  .gray {
+    background-color: $lcars-grey-dark;
+  }
+  .content {
+    background-color: $lcars-grey-dark;
+  }
+  .caption {
+    color: $lcars-lavender;
+  }
+  .activity-card {
+    background: $lcars-grey-dark;
+    border-color: #333333;
+    &:hover { border-color: $lcars-lavender; }
+  }
+  .card-title {
+    color: $lcars-lavender;
+    a:link, a:visited { color: $lcars-lavender; }
+    a:hover { color: $lcars-orange; }
+  }
+  .card-meta { color: $lcars-grey-lite; }
+  .pill-workshop  { color: $lcars-salmon; }
+  .pill-podcast   { color: $lcars-pink; }
+  .pill-speaking  { color: $lcars-orange; }
+  .paper-item { border-top-color: #333333; }
+  .paper-venue { color: $lcars-grey-lite; }
+  .paper-title {
+    color: $lcars-lavender;
+    a:link, a:visited { color: $lcars-lavender; }
+    a:hover { color: $lcars-orange; }
+  }
 }
 
 /* ── Heading color override ───────────────────────── */
@@ -487,11 +364,11 @@ h1, h2, h3, h4, h5, h6 { color: #2c3b45; }
   font-size: 16px;
   padding: 3px 8px;
   a:link, a:visited {
-      color: black;
-      text-decoration: underline;
+    color: black;
+    text-decoration: underline;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-    @include darkmode;
+  @include darkmode;
 }
