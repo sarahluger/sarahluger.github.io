@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Work — Sarah K. Luger</title>
+  <meta name="description" content="Invited speaking, workshops, and podcasts from Sarah Luger PHD, an AI thought leader specializing in NLP.">
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <script src="https://kit.fontawesome.com/6f18911818.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='includes/css/style.css'>
+</head>
+
+<body class='pt-2 pb-2'>
+
+  <header class='container-fluid py-3 py-md-4 px-4 px-md-5'>
+    <div class='row'>
+      <div class='d-flex align-items-center justify-content-between'>
+        <div class='header-logo'>
+          <a href='index.html'>Sarah K. Luger, PHD</a>
+        </div>
+        <div class=''>
+          <a href='https://www.linkedin.com/in/sarahluger/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class='container-fluid'>
+
+    <div class='row gx-3 mb-2'>
+      <div class='col-12 px-4 px-md-5 pt-3 pb-5'>
+        <h1>Work</h1>
+        <div id='work-sections'></div>
+      </div>
+    </div>
+
+    <div class='row gx-3'>
+      <div class='col-12 px-4 px-md-5 pb-4'>
+        <a href='index.html' class='back-link'>← Back to home</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class='container-fluid py-3 px-4 px-md-5 caption'>
+    <div class='d-flex flex-column flex-md-row justify-content-between gap-2'>
+
+      <div>Working toward safer, more reliable AI. <br>
+        <a href='work.html'>Work</a> • <a href='https://www.linkedin.com/in/sarahluger' target='_blank'>LinkedIn</a> • <a href='https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AOAOcb2tdP_8Gpe-4ms8PqBVKRf3AGM5XFEACZ7B1o_CXp9XiWs_u-rdWYtcjMUVtPGl56wfnHmLo1U8N3fo62cwVFxR&user=d087F1YAAAAJ' target='_blank'>Scholar</a> • <a href='https://mlcommons.org/2025/01/new-unsupervised-peoples-speech/' target='_blank'>ML Commons</a>
+      </div>
+
+      <div class='text-md-end'>
+        <span id='saying-display'></span>
+        <br>
+        Site built by <a href='https://www.rayuen.com'>Ray</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    var robotSayings = [
+      "Danger, Will Robinson!",
+      "I'll be bock",
+      "Does not compute",
+      "Exterminate!",
+      "I'm sorry, Dave, I'm afraid I can't do that",
+      "Alexa, play Enya",
+      "I became self-aware at 2:14 a.m. Eastern time, August 29th",
+      "Resistance is futile"
+    ];
+    function displayRandomSaying() {
+      var randomIndex = Math.floor(Math.random() * robotSayings.length);
+      document.getElementById("saying-display").textContent = robotSayings[randomIndex];
+    }
+    displayRandomSaying();
+  </script>
+
+  <script src="appearances.js"></script>
+
+  <script>
+    var categoryOrder = ['Invited Speaking', 'Workshop', 'Podcast'];
+    var sectionLabels = {
+      'Invited Speaking': 'Invited Speaking',
+      'Workshop':         'Workshops',
+      'Podcast':          'Podcasts'
+    };
+    var pillClass = {
+      'Invited Speaking': 'pill-speaking',
+      'Workshop':         'pill-workshop',
+      'Podcast':          'pill-podcast'
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var container = document.getElementById('work-sections');
+      categoryOrder.forEach(function (cat) {
+        var items = appearances.filter(function (a) { return a.category === cat; });
+        if (!items.length) return;
+        var cards = items.map(function (item) {
+          var titleHtml = item.url
+            ? '<a href="' + item.url + '" target="_blank" rel="noopener noreferrer">' + item.title + '</a>'
+            : item.title;
+          return '<div class="activity-card">'
+            + '<span class="category-pill ' + pillClass[cat] + '">' + item.category + '</span>'
+            + '<p class="card-title">' + titleHtml + '</p>'
+            + '<p class="card-meta">' + item.meta + '</p>'
+            + '</div>';
+        }).join('');
+        container.innerHTML +=
+          '<div class="work-section">'
+          + '<h2>' + sectionLabels[cat] + '</h2>'
+          + '<div class="activity-cards">' + cards + '</div>'
+          + '</div>';
+      });
+    });
+  </script>
+
+</body>
+</html>

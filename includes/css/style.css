@@ -287,6 +287,43 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.5rem;
 }
 
+@media (max-width: 767px) {
+  .activity-card:nth-child(n+5) {
+    display: none;
+  }
+}
+
+.see-more-link {
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #1A56A0;
+  text-decoration: none;
+  opacity: 1;
+}
+.see-more-link:hover {
+  color: #E85D00;
+}
+
+/* ── Work page ────────────────────────────────────── */
+.work-section {
+  margin-bottom: 3rem;
+}
+.work-section h2 {
+  margin-bottom: 1.25rem;
+}
+
+.back-link {
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #1A56A0;
+  text-decoration: none;
+}
+.back-link:hover {
+  color: #E85D00;
+}
+
 /* ── Papers ───────────────────────────────────────── */
 .papers-grid {
   display: grid;
@@ -429,6 +466,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #9996FF;
   }
   .paper-title a:hover {
+    color: #FF9A00;
+  }
+  .see-more-link,
+  .back-link {
+    color: #9996FF;
+  }
+  .see-more-link:hover,
+  .back-link:hover {
     color: #FF9A00;
   }
 }
